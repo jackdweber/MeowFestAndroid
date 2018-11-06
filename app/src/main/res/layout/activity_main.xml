@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="loadNext"
+        app:layout_constraintBottom_toBottomOf="@id/rv_1"
+        app:layout_constraintEnd_toEndOf="@id/rv_1"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Back"
+        android:onClick="loadBack"
+        app:layout_constraintBottom_toBottomOf="@id/rv_1"
+        />
+
+</android.support.constraint.ConstraintLayout>
